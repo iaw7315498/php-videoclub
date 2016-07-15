@@ -1,0 +1,14 @@
+portada.php
+aquí validaremos el usuario y crearemos una sesion o una cookie.
+
+sesion.php
+tendremos todos los datos del usuario que se ha conectado, por cada refresco de pagina buscaremos en la base de datos.
+
+funciones.php
+creamos todas las funciones necesarias para cada funcion de nuestra pagina 
+
+botones.php
+funciones usadas cuando pulsamos un boton dentro de sesion.php
+
+cerrar.php
+borramos la cookie o cerramos sesion del usuario

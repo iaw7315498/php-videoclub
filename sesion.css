@@ -1,0 +1,110 @@
+* { /* quito los posibles margenes de los diferentes navegadores y le doy un tipo de letra personalizado */
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+@font-face { /* añado un tipo de letra a nuestro font-family */
+	font-family: paul; /* le doy el nombre de paul */
+	src: url(http://www.formasterminds.com/content/font.ttf); /* le digo de donde coja las letras */
+}
+#cabecera { /* con el '#' indico una 'id',con '.' indico una 'clase' */ 
+	background: lime; /* doy un color a toda la cabecera en este caso color lima */
+	border: 1px solid;
+	padding: 20px;
+	text-align: center;
+}
+
+#menu {
+	background: black;
+	color: white; /* pongo color blanco a la letra ya que el fondo lo pusimos negro */
+	padding: 3px 3px 3px;
+}
+
+#menu li { /* entramos en los 'li' dentro de la id 'menu_jpr' */
+	display: inline-block; /* indicamos que se ponga en linea */
+	list-style: none; /* y quitamos el estilo (puntos, guiones, etc..) */
+	padding: 3px;
+	cursor: pointer;
+	background: rgb(44, 132, 232);
+	font: bold 13px verdana, sans-serif; /* le doy un tipo de letra diferente que el resto */
+}
+
+#contenedor {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items:  stretch;
+}
+
+#seccion {
+	flex: 5;
+	 border: 1px solid red;
+	 display: flex;
+	 flex-direction: column;
+	 background-color: rgb(240,240,230);
+}
+
+.columna {
+	flex: 1;
+	border: 1px solid blue;
+}
+
+#pie {
+	clear: both;
+	text-align: center;
+	border-top: 2px solid black;
+	font-family: serif;
+	background: silver;
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+}
+
+#cerrar {
+	float: right;
+	border: 1px solid black;
+	border-radius: 7px;
+	background-color: #E0E0E0;
+	padding: 2px 2px 2px 2px;
+	list-style: none;
+	text-decoration:none;
+	overflow: hidden;
+}
+
+.pagina_pelicula {
+	display: inline-block;
+	border: 7px solid white ;
+	padding-bottom: 1px;
+	background: silver;
+	cursor: pointer;
+}
+#selector_pagina {
+	text-align: center;
+}
+
+#mostrar_pelicula {
+	margin-right: 15%;
+	margin-left: 15%;
+}
+.imagenes {
+	height: 400px;
+	width: 300px;
+	float: left;
+	margin-bottom: 28px;
+}
+.parrafo {
+	margin-left: 305px;
+}
+.contenido_pelicula {
+	width: 100%;
+	overflow: hidden;
+}
+.mensajeYboton {
+	background: silver;
+	float: right;
+	font-weight: bold;
+}
+.sinopsi {
+	background: rgb(190,129,247);
+	font-family: Arial;
+	font-size: 16px;
+}
